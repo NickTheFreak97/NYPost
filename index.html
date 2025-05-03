@@ -3,18 +3,30 @@
     <head>
         <meta charset="utf-16">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="Styles/home.css" /> 
+        <link rel="stylesheet" href="Styles/nav.css" /> 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <header>
             <div class="container">
-                <section>
+                <section id="router">
                     <ul>
-                        <li><i class="material-icons" style="font-size:24px;">menu</i> <span>SECTIONS</span></li>
-                        <li><i class="material-icons" style="font-size:32px;">search</i></li>
-                        <li><i class="material-icons" style="font-size:32px;">mail</i></li>
+                        <li><i class="material-icons" style="font-size:24px;" aria-label="Menu">menu</i> <span>SECTIONS</span></li>
+                        <li><i class="material-icons" style="font-size:32px;" aria-label="Search">search</i></li>
+                        <li><i class="material-icons" style="font-size:32px;" aria-label="Newsletter">mail</i></li>
                     </ul>
+                </section>
+
+                <section id="title" aria-hidden="true">
+                    <a href="#">
+                        <h1>NEW YORK POST</h1>
+                    </a>
+                </section>
+
+                <section>
+                    <a href="#">
+                        <img src="assets/images/read.latest.webp" alt="read latest on PageSix">
+                    </a>
                 </section>
             </div>
         </header>
