@@ -1,0 +1,272 @@
+@font-face { 
+    font-family: Posterman; 
+    src: url('../assets/fonts/Posterman.otf'); 
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+   
+
+header {
+    height: 86px;
+    width: 100%;
+    background-color: #cf2e2e;
+}
+
+.container {
+    width: auto;
+    height: 100%;
+    max-width: 81rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+ MARK: NAVBAR @screen > 1024
+ */
+header .container section#router {
+    height: 100%;
+    width: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    margin-left: 1rem;
+}
+
+header .container section ul {
+    display: inline-flex;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+}
+
+header .container section ul li {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+}
+
+header .container section ul li:not(:first-child) {
+    margin-left: 1rem;
+}
+
+
+header .container section ul li:first-child {
+    border: 1px solid white;
+    color: white;
+    padding: 3px 7px;
+    transition: background-color 0.25s ease-out;
+}
+
+header .container section ul li:first-child:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+header .container section ul li:first-child span {
+    font-weight: 600;
+}
+
+/*
+ MARK: TITLE @screen > 1024
+*/
+header .container section h1 {
+    display: inline;
+    font-family: Posterman;
+    font-size: 67px;
+    font-style: italic;
+    color: black;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+}
+
+header .container section a {
+    text-decoration: none !important;
+}
+
+
+header .container section h1::before {
+    content: "NEW YORK POST";
+    display: inline;
+    font-family: Posterman;
+    font-size: 67px;
+    font-style: italic;
+    color: white;
+    position: absolute;
+    z-index: 0;
+    transform: translate(5px, -5px);
+}
+
+header .container section#title {
+    height: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+ MARK: PAGESIX @screen > 1024
+*/
+header .container section:has(img) {
+    margin-right: 2rem;
+}
+
+@media only screen and (min-width : 1025px) {
+    
+}
+
+@media only screen and (min-width: 769px) and (max-width : 1024px) {
+    /*
+        MARK: ROUTER [769px - 1024px]
+    */
+    header .container section#router {
+        height: 100%;
+        width: auto;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex: none;
+        margin-left: 1rem;
+    }
+
+    /*
+        MARK: TITLE [769px - 1024px]
+    */
+    section#title {
+        margin-left: 2rem;
+        margin-right: auto;
+    }
+
+    /*
+        MARK: PAGESIX [769px - 1024px]
+    */
+    header section:has(> a img) {
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width : 768px) {
+    header {
+        height: 52px;
+    }
+
+    /*
+        MARK: TITLE [600px - 768px]
+    */
+    header .container section h1::before, header .container section h1 {
+        font-size: 34px;
+    }
+
+    header .container section#title {
+        height: fit-content;
+        margin-left: 2rem;
+    }
+
+    /*
+        MARK: ROUTER [600px - 768px]
+    */
+    header .container section:has(> ul) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: fit-content;
+    }
+
+    header .container section#router {
+        margin-right: auto;
+        flex-basis: fit-content;
+        flex: none;
+        width: auto;
+    } 
+
+    header .container section h1::before {
+        transform: translate(3px, -3px);
+    } 
+
+    header section ul li span {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    header .container section ul li:not(:first-child) {
+        margin-left: 10px;
+    }
+
+    /*
+        MARK: PAGESIX [600px - 768px]
+    */
+    header section:has(> a img) {
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+
+@media only screen and (max-width: 599px) {
+    /*
+        MARK: TITLE < 600px
+    */
+    header {
+        height: 52px;
+    }
+
+    header .container section h1::before, header .container section h1 {
+        font-size: 34px;
+    }
+
+    header .container section#title {
+        height: fit-content;
+        margin-left: 2rem;
+    }
+
+    /*
+        MARK: ROUTER < 600px
+    */
+    header .container section:has(> ul) {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: fit-content;
+    }
+
+    header .container section {
+        margin-right: auto;
+        flex-basis: fit-content;
+        flex: none;
+        width: auto;
+    } 
+
+    header .container section h1::before {
+        transform: translate(3px, -3px);
+    } 
+
+    header section ul li span {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    header .container section ul li:not(:first-child) {
+        margin-left: 10px;
+    }
+
+    /*
+        MARK: PAGESIX < 600px
+    */
+    header section:has(> a img) {
+        visibility: hidden;
+        position: absolute;
+    }
+}
