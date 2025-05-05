@@ -1,0 +1,83 @@
+aside .section-header-title {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    color: #cf2e2e;
+    text-shadow: none;
+}
+
+.covers-container {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.covers-container img {
+    width: inherit;
+    padding: 1rem 2rem;
+}
+
+.section-header-wrapper {
+    width: 100%;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.try-it-free-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    visibility: visible;
+    width: 100%;
+}   
+
+
+.section-header-try-free {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+    font-size: 0.75rem;
+}
+
+.covers-container h1, .covers-container h2, .covers-container h3 {
+    font: NeueHaas;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.covers-container h2, .covers-container h3 {
+    font-size: 1rem;
+}
+
+.covers-container h2 {
+    padding-top: 0.75rem;
+}
+
+.covers-container h3 {
+    color: #585858;
+    padding-top: 1rem;
+}
+
+ 
+.covers-container h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+
+.covers-container .try-it-free-footer .section-header-try-free::before {
+    visibility: visible;
+    display: inline-block;
+    background: white;
+    left: 90%;
+    transform: translateX(0%);
+}
