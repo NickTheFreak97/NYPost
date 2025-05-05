@@ -115,6 +115,7 @@ em {
     color: #cf2e2e;
     font-size: inherit;
     line-height: 2.4rem;
+    font-family: NeueHaas;
 }
 
 .separator {
@@ -129,6 +130,7 @@ em {
     font-size: 36px;
     font-weight: 600;
     text-align: left;
+    font-family: NeueHaas;
 }
 
 .article-caption {
@@ -136,6 +138,10 @@ em {
     font-weight: lighter;
     margin: 0.75rem 0;
     text-align: left;
+}
+
+.pb {
+    margin-bottom: 1rem;
 }
 
 @media only screen and (min-width : 1025px) {
