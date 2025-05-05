@@ -7,14 +7,31 @@ aside .section-header-title {
     text-shadow: none;
 }
 
-.covers-container {
+.covers-container, .covers-wrapper {
     margin: 1rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
 }
 
+.covers-container {
+    height: 200vh;
+    justify-content: flex-start;
+}
+
+.covers-wrapper {
+}
+
+.covers-wrapper {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: inherit;
+    position: sticky;
+    justify-content: flex-start;
+    top: 0;
+}
 
 .covers-container img {
     width: inherit;
