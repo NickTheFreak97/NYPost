@@ -7,8 +7,10 @@
     border: none;
     background: inherit;
     box-shadow: none;
-    text-shadow: -3px 3px #000;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
     padding: 1rem 0;
+    position: relative;
 }
 
 .covers-subheadline {
