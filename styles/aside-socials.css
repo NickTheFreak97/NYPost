@@ -1,0 +1,61 @@
+aside section {
+    width: 100%;
+    overflow: visible;
+}
+
+aside section ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.425rem 0;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+aside section ul li {
+    display: inline-block;
+}
+
+li i {
+    font-size: 1.25rem;
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+.facebook {
+    color: white;
+    background: #3b5998;
+}
+
+.x-twitter {
+    color: white;
+    background: #000;
+}
+
+.instagram {
+    color: white;
+    background: linear-gradient(150deg,#7a1bff 22.41%,#7e1bf9 25.34%,#8a1de8 29.73%,#9e20cd 34.12%,#b924a7 39.25%,#dc2976 44.37%,#ff2f48 48.77%,#ff423c 50.96%,#ff761c 59.02%,#ff9608 64.14%,#ffa301 67.8%,#ffa601 68.54%,#ffc001 74.39%,#ffd001 79.52%,#ffd602 83.91%)
+}
+
+.linkedin {
+    color: white;
+    background: #0077b5;
+}
+
+.nypost {
+    color: white;
+    background: #cf2e2e;
+}
+
+.yt {
+    color: white;
+    background: red;
+}
+
+@media only screen and (max-width : 768px) {
+
+
+}

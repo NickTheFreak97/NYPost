@@ -81,7 +81,7 @@ header .container section ul li:first-child span {
 /*
  MARK: TITLE @screen > 1024
 */
-header .container section h1 {
+header .container section h1, footer header h1 {
     display: inline;
     font-family: Posterman;
     font-size: 67px;
@@ -90,6 +90,8 @@ header .container section h1 {
     position: relative;
     z-index: 1;
     text-decoration: none;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 
 header .container section a {
@@ -97,7 +99,7 @@ header .container section a {
 }
 
 
-header .container section h1::before {
+header .container section h1::before, footer header h1::before {
     content: "NEW YORK POST";
     display: inline;
     font-family: Posterman;

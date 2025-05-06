@@ -1,0 +1,102 @@
+.header-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0;
+}
+
+.section-header-separator {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.section-header-title {
+    padding: 0.45rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font: NeueHaas;
+    text-transform: uppercase;
+    background: #ffd62b;
+    transform: skew(-20deg, 0deg);
+    z-index: 1;
+    margin-left: 2rem;
+    box-shadow: -1px 1px 0 #000,-2px 2px 0 #000,-3px 3px 0 #000,-4px 4px 0 #000,-5px 5px 0 #000,-6px 6px 0 #000;
+    border: 3px solid #000;
+    color: white;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.section-header-try-free {
+    font-size: 0.925rem;
+    font-weight: semibold;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    position: relative;
+    margin-left: auto;
+    font-weight: 600;
+    background: white;
+    z-index: 1;
+}
+
+.section-header-try-free::before {
+    content: '›';
+    position: absolute;
+    left: 90%;
+    color: #cf2e2e;
+    font-weight: 600;
+}
+
+.try-it-free-footer {
+    display: none;
+    visibility: hidden;
+}
+
+
+
+@media only screen and (max-width : 768px) {
+    .section-header-try-free, .section-header-try-free::before {
+        display: none;
+        visibility: hidden;
+    }
+
+    .section-header-title {
+        margin: 0 auto;
+    }
+
+    .try-it-free-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        visibility: visible;
+        width: 100%;
+    }   
+
+    .try-it-free-footer .section-header-try-free {
+        margin-left: auto;
+        margin-right: auto;
+        visibility: visible;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 1.5rem;
+        background: white;
+    }
+
+    .try-it-free-footer .section-header-try-free::before {
+        visibility: visible;
+        display: inline-block;
+        background: white;
+        left: 90%;
+        transform: translateX(0%);
+    }
+}

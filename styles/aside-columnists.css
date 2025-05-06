@@ -1,0 +1,135 @@
+.columnist-container {
+    background: #ffd62b;
+}
+
+.columnist-container .section-header-title {
+    color: white;
+    border: none;
+    background: inherit;
+    box-shadow: none;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.covers-subheadline {
+    font-weight: 800;
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    word-spacing: -0.2ch;
+    margin-bottom: 1rem;
+}
+
+.columnist-container .section-header-try-free {
+    background: inherit;
+    margin-bottom: 1rem;
+}
+
+.columnist-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #fff;
+    margin: 1rem 0.25rem;
+}
+
+.columnist-container ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin: 0 0.5rem;
+}
+
+.columnist-container ul li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #000;
+    top: 15%;
+    z-index: 0;
+}
+
+
+.columnist-container ul li .columnist-credit {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-bottom: 1px solid #585858;
+    align-items: center;
+}
+
+.columnist-container ul li .columnist-credit img {
+    width: 33%;
+    height: auto;
+    z-index: 1;
+}
+
+.covers-container .columnist-container img {
+    padding: 0;
+}
+
+.columnist-container .columnist-credit em {
+    font-style: normal;
+    font-size: 0.9rem;
+    display: inline-block;
+    top: 20%;
+    position: relative;
+}
+
+aside section .columnist-container ul {
+    border: 0px;
+    width: auto;
+}
+
+.columnists-wrapper {
+    background: #ffd62b;
+}
+
+.columnist-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+    word-spacing: -0.2ch;
+    margin: 1rem 0;
+}
+
+.try-it-button {
+    background: #cf2e2e;
+    border: 2px solid transparent;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.75rem 1.67rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.try-it-button:hover {
+    background: #E13131;
+}
+
+.try-it-button:active {
+    border: 2px solid #000;
+}
+
+.already-sub {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 1rem auto;
+}
+
+.already-sub .login {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: underline;
+}

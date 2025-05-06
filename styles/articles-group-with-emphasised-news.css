@@ -1,0 +1,106 @@
+.grouped-article-with-emph-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.grouped-article-with-emph-container .grouped-side-news {
+    border: 0px;
+}
+
+.grouped-article-with-emph {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 50%;
+    padding: 0 2rem;
+    border-right: 1px solid #585858;
+}
+
+.grouped-side-news li {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.grouped-side-news li img {
+    padding-bottom: 1rem;
+}
+
+
+.grouped-side-news ul {
+    list-style: none;
+}
+
+.grouped-side-news-title {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.grouped-side-news ul li:not(:last-child) {
+    border-bottom: 1px solid #585858;
+}
+
+
+.empasised-grouped-news-title {
+    font-weight: 600;
+    font-size: 2.2rem;
+    font-family: NeueHaas;
+    margin: 1rem 0;
+    line-height: 1;
+}
+
+.grouped-article-caption {
+    color: #585858;
+    font-weight: lighter;
+    margin: 1rem 0;
+}
+
+
+.empasised-grouped-news-title .red {
+    font-size: inherit;
+    color: #cf2e2e;
+}
+
+@media only screen and (max-width : 768px) {
+    .grouped-article-with-emph-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .grouped-article-with-emph {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        border-right: 0px;
+        border-bottom: 1px solid #585858;
+        margin-bottom: 1rem;
+    }
+
+    .grouped-side-news {
+        max-width: 100%;
+        padding: 0;
+        border-right: 0px;
+        border-bottom: 1px solid #585858;
+        margin-bottom: 1rem;
+    }
+
+    .grouped-side-news li {
+        flex-direction: row;
+    }
+        
+    .grouped-side-news li img {
+        max-width: 25%;
+        padding-bottom: 0;
+    }
+
+    .grouped-side-news-title {
+        margin-left: 1rem;
+    }
+}
